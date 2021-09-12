@@ -12,28 +12,37 @@ namespace CSC470_P2
 {
     public partial class FormMain : Form
     {
+       
         public FormMain()
         {
             InitializeComponent();
             CenterToScreen();
+            
         }
 
         private void seeFish_bt_Click(object sender, EventArgs e)
         {
+            FormSeeFish frmSF;
+
+
             if (crappieSelected_rbt.Checked)
             {
-                FormSeeFish frmSF = new FormSeeFish("Crappie");
-                frmSF.Show();
+                frmSF  = new FormSeeFish("Crappie");
+                frmSF.ShowDialog();
+
             } else if (perchSelected_rbt.Checked) {
 
-                FormSeeFish frmSF = new FormSeeFish("Perch");
-                frmSF.Show();
-
+                frmSF = new FormSeeFish("Perch");
+                frmSF.ShowDialog();
+            
             } else
             {
-                FormSeeFish frmSF = new FormSeeFish("Walleye");
-                frmSF.Show();
+                frmSF = new FormSeeFish("Walleye");
+                frmSF.ShowDialog();
             }
+
+            MessageBox.Show(frmSF.userSelection);
+            
         }
 
 
