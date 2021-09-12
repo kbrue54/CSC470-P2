@@ -1,7 +1,7 @@
 ﻿
 namespace CSC470_P2
 {
-    partial class FormMain
+    partial class FormSeeFish
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@ namespace CSC470_P2
         {
             this.SuspendLayout();
             // 
-            // FormMain
+            // FormSeeFish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Name = "FormSeeFish";
+            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }
@@ -45,4 +45,3 @@ namespace CSC470_P2
         #endregion
     }
 }
-
