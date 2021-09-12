@@ -12,9 +12,12 @@ namespace CSC470_P2
 {
     public partial class FormSeeFish : Form
     {
-        public FormSeeFish()
+        public FormSeeFish(string fish)
         {
             InitializeComponent();
+            CenterToScreen();
+
+            label1.Text = fish;
         }
     }
 }

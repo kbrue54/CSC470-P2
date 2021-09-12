@@ -57,6 +57,7 @@ namespace CSC470_P2
             this.seeFish_bt.TabIndex = 1;
             this.seeFish_bt.Text = "See Fish";
             this.seeFish_bt.UseVisualStyleBackColor = true;
+            this.seeFish_bt.Click += new System.EventHandler(this.seeFish_bt_Click);
             // 
             // crappieSelected_rbt
             // 

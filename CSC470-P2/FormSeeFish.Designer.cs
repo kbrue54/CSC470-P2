@@ -33,6 +33,7 @@ namespace CSC470_P2
             this.cancel_bt = new System.Windows.Forms.Button();
             this.keepIt_bt = new System.Windows.Forms.Button();
             this.throwItBack_bt = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@ namespace CSC470_P2
             this.keepIt_bt.Name = "keepIt_bt";
             this.keepIt_bt.Size = new System.Drawing.Size(96, 27);
             this.keepIt_bt.TabIndex = 2;
-            this.keepIt_bt.Text = "Keep It";
+            this.keepIt_bt.Text = "button2";
             this.keepIt_bt.UseVisualStyleBackColor = true;
             // 
             // throwItBack_bt
@@ -71,11 +72,21 @@ namespace CSC470_P2
             this.throwItBack_bt.Text = "Throw it Back";
             this.throwItBack_bt.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(178, 318);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
             // FormSeeFish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(356, 337);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.throwItBack_bt);
             this.Controls.Add(this.keepIt_bt);
             this.Controls.Add(this.cancel_bt);
@@ -84,6 +95,7 @@ namespace CSC470_P2
             this.Text = "Keep it or let it go";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -93,5 +105,6 @@ namespace CSC470_P2
         private System.Windows.Forms.Button cancel_bt;
         private System.Windows.Forms.Button keepIt_bt;
         private System.Windows.Forms.Button throwItBack_bt;
+        private System.Windows.Forms.Label label1;
     }
 }

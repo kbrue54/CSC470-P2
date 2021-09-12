@@ -15,6 +15,27 @@ namespace CSC470_P2
         public FormMain()
         {
             InitializeComponent();
+            CenterToScreen();
         }
+
+        private void seeFish_bt_Click(object sender, EventArgs e)
+        {
+            if (crappieSelected_rbt.Checked)
+            {
+                FormSeeFish frmSF = new FormSeeFish("Crappie");
+                frmSF.Show();
+            } else if (perchSelected_rbt.Checked) {
+
+                FormSeeFish frmSF = new FormSeeFish("Perch");
+                frmSF.Show();
+
+            } else
+            {
+                FormSeeFish frmSF = new FormSeeFish("Walleye");
+                frmSF.Show();
+            }
+        }
+
+
     }
 }
